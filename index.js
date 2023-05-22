@@ -1,4 +1,4 @@
-// * Slider JavaScript
+// * Slider jQuery
 $(document).ready(function () {
   //  Auto Slider
   let slideInterval;
