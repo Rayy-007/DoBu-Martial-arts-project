@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoBu Martial Arts</title>
+
+    <link rel="stylesheet" href="../general_styling.css">
+    <link rel="stylesheet" href="../form_styling.css">
+    <link rel="stylesheet" href="../Admin_Dashboard/admin_page.css">
+    <link rel="stylesheet" href="../JoinNow/join_now.css">
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+
+    <script src="../Admin_Dashboard/admin_page.js"></script>
+
+    <script src="https://kit.fontawesome.com/70e9b6443b.js" crossorigin="anonymous"></script>
+    
+
+</head>
+<body>
+
+    <!-- ------------------------ Navigation Bar ------------------------ -->
+    <header class="nav_container"> 
+
+    <a href="../index.html"><img src="../images/home_images/dobu-logo.png" alt=""></a>
+
+    <nav>
+        <ul class="nav_links">
+            <li class="nav_link "><a class="before" href="../index.html">Home</a></li>
+
+            <li class="nav_link drop_down_container">
+                <a class="before" href="../Programs/programs.html">Programs</a>
+                <div class="drop_down">
+                    <a class="before" href="../Programs/programs.html#classes_detail">Classe</a>
+                    <a class="before" href="../Programs/programs.html#schedule">Schedule</a>
+                </div>
+            </li>
+
+            <li class="nav_link "><a class="before" href="../Membership/membership.html">Membership</a></li>
+            <li class="nav_link "><a class="before" href="../Instructor/instructor.html">Instructor</a></li>
+            <li class="nav_link "><a class="before" href="../AboutUs/about_us.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <nav>
+        <ul class="nav_btn">
+            <li><a href="../JoinNow/join_now.html" class="btn btn_fill join_now before after">Join Now</a></li>
+            <li><a href="../Login/login.html" class="btn btn_outline login_btn ">Login</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <!-- -------- Info or step by step ---------- -->
+    <div class="info_container" >
+        <h4 class="small">How to Use Admin Dashbord  <i class="fa-solid fa-circle-question fa-bounce"></i></h4>
+    </div>
+    <div class="show_info">
+        <h3>Step by Step Instruction for using Admin Dashboard</h3>
+        <ol>
+            <li>Here is the main page of the Admin Dashboard</li>
+            <li>To add new data, locate the "Add" button or a similar option. Click on it to open the form for adding new data.</li>
+            <li>Fill in all the required fields correctly. These fields may include name, email, password, gender, or any other relevant information.</li>
+            <li>Make sure to validate the form before submission. Check for any validation errors or missing fields.</li>
+            <li>If the form is filled correctly, click the "Add" or "Submit" button to add the data to the system. A success message may appear to confirm the data addition.</li>
+            <li>To edit existing data, navigate to the section or page that displays the data you want to edit.</li>
+            <li>Locate the "Edit" or "Update" button associated with the specific data entry you wish to modify. Click on it to open the edit form.</li>
+            <li>The form will be pre-populated with the existing data for that entry. Make the necessary changes to the desired fields.</li>
+            <li>Validate the form to ensure all changes are correct and there are no errors.</li>
+            <li>Click the "Update" or "Save" button to apply the changes. A success message may appear to confirm the update.</li>
+            <li>To delete data, locate the "Delete" or "Remove" button associated with the specific data entry you want to delete.</li>
+            <li>Confirm the deletion by clicking on the appropriate confirmation prompt or dialog box that appears.</li>
+            <li>The data entry will be permanently removed from the system, and a success message may appear to confirm the deletion.</li>
+            <li>Repeat these steps as necessary for other data entries or actions within the Admin Dashboard</li>
+        </ol>
+
+        <div class="close_info">
+            <i class="fa-solid fa-circle-xmark fa-spin fa-spin-reverse"></i>
+        </div>
+
+    </div> 
+
+
+    <!-- ------------ Admin Dashbord ---------------------- -->
+    <section class="flex_container admin_container">
+        <h2>Admin Dashborad</h2>
+        <br>
+
+        <div class="dashborad_container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th><i class="fa-solid fa-users"></i> Name</th>
+                        <th><i class="fa-solid fa-envelope"></i>Email Address</th>
+                        <th><i class="fa-solid fa-person-half-dress"></i> Gender</th>
+                        <th><i class="fa-solid fa-thumbs-up"></i>Interested Class</th>
+                        <th><i class="fa-solid fa-user-pen"></i>Edit Info</th>
+                        <th><i class="fa-solid fa-trash"></i>Delete Info</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    <!-- <tr>
+                        <td>1</td>
+                        <td>Min</td>
+                        <td>min@gmail.com</td>
+                        <td>male</td>
+                        <td>judo</td>
+                        <td>Edite</td>
+                        <td>DEle</td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+    <!-- -------- Edit Form ---------- -->
+    <div class="flex_container edit_form_container" id="edit_form_container" style="display: none;">
+        <div class="form_container edit_form">
+            <form id="editForm" >
+                <h3>Edit the User Info</h3>
+                <fieldset>
+                    <legend>Name</legend>
+                    <input type="text" id="newName" />
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Email</legend>
+                    <input type="email" name="email" id="newEmail" />
+                </fieldset>
+
+                <fieldset class="gender_field">
+                    <legend><label for="radio"><h4>Choose Gender</h4></label></legend>
+                    <div class="radio">
+                        <div class="radio_container">
+                            <input type="radio" name="radio"  id="newGender1" value="male">
+                            <label for="newGender1">Male</label>
+                        </div>
+                        <div class="radio_container">
+                            <input type="radio" name="radio"  id="newGender2" value="female">
+                            <label for="newGender2">Female</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="classes_field"> 
+                    <legend><label for="classes"><h4>Choose Interested Classes</h4></label></legend>
+        
+                    <select name="classes" id="newClasses">
+                        <option value="">Select</option>
+                        <option value="judo">Judo</option>
+                        <option value="karate">Karate</option>
+                        <option value="jui-jitsu">Jiu jitsu</option>
+                        <option value="muay-thai">Muay Thai</option>
+                        <option value="fitness">Fitness</option>
+                    </select>
+                    
+                </fieldset>
+        
+        
+                <div class="btn_container">
+                    <button type="reset" id="closeButtonEdit" class="btn btn_outline login_btn" >Close</button>
+                    <button class="btn btn_fill join_now before after" type="submit">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    
+    <!-- ------------ Add New User Form ---------->
+    <div class="flex_container add_form_container" id="add_form_container"  style="display: none;">
+        <form class="form_container" id="add_user_form" action="">
+            <h3>Add the new User</h3>
+            <br>
+            
+            <input type="text" id="name" name="name" placeholder="Your Name" /> 
+            
+            <input type="email" name="email" id="email" placeholder="Your Email Address" />
+    
+            <!-- <input type="password" name="password" id="password" placeholder="Enter password" />
+                <i class="fa-sharp fa-regular fa-eye-slash" id="password_toggle"></i> -->
+                
+                <fieldset class="gender_field">
+                    <legend><label for="radio"><h4>Choose Gender</h4></label></legend>
+                <div class="radio">
+                    <div class="radio_container">
+                        <input type="radio" name="radioNew" id="radio1" value="male">
+                        <label for="radio1">Male</label>
+                    </div>
+                    <div class="radio_container">
+                        <input type="radio" name="radioNew" id="radio2" value="female">
+                        <label for="radio2">Female</label>
+                    </div>
+                </div>
+            </fieldset>
+            
+            <fieldset class="classes_field"> 
+                <legend><label for="classes"><h4>Choose Interested Classes</h4></label></legend>
+                
+                <select name="classes" id="classes">
+                    <option value="">Select</option>
+                    <option value="judo">Judo</option>
+                    <option value="karate">Karate</option>
+                    <option value="jui-jitsu">Jiu jitsu</option>
+                    <option value="muay-thai">Muay Thai</option>
+                    <option value="fitness">Fitness</option>
+                </select>
+                
+            </fieldset>
+            <div class="button_container">
+                <button type="reset" id="closeButton" class="btn btn_outline login_btn" >Close</button>
+                <button type="submit" class="btn btn_fill join_now before after">Add</button>
+            </div>
+        </form>
+    </div> 
+    
+    <!-- ======  Added Success Full Message and Fail Message (For Add Form ) ======== -->
+    <div class="success_container ">
+        <h4>Added Successfully</h4>
+    </div>
+    <div class="fail_container ">
+        <h4>Please Fail all Field!!</h4>
+    </div>
+
+    <!--  ============ Deleted Success ==============  -->
+    <div class="delete_container ">
+        <h4>Deleted Successfully !!</h4>
+    </div>
+
+
+    <!--  ============ Changed Success Full Message ==============  -->
+    <div class="changed_container ">
+        <h4>Changed Successfully !!</h4>
+    </div>
+
+
+    <!-- ------------------------ Footer ------------------------ -->
+    <footer>
+        <div class="wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <a href="../index.html"><img src="../images/home_images/dobu-logo.png" alt=""></a>
+        <div class="links_container">
+            <h4 >Site Map </h4>
+            <ul class="nav_links">
+                <li class="nav_link "><a class="before" href="../index.html">Home</a></li>
+                <li class="nav_link"><a class="before" href="../Programs/programs.html">Programs</a></li>
+                <li class="nav_link "><a class="before" href="../Membership/membership.html">Membership</a></li>
+            </ul>
+            <ul class="nav_links">
+                <li class="nav_link "><a class="before" href="../Instructor/instructor.html">Instructor</a></li>
+                <li class="nav_link "><a class="before" href="../AboutUs/about_us.html">About Us</a></li>
+            </ul>
+        </div>
+        <div class="social_container">
+            <h4>Find Us On Social Media</h4>
+            <div class="social_icons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+        </div>
+
+        <div class="form_container">
+            <h4>Contact Us</h4>
+            <form >
+                <input id="email_contact" type="email" placeholder="Enter Your Email">
+                <button  class="btn btn_outline login " type="button" >Contact</a>
+            </form>
+        </div>
+
+    </footer>
+</body>
+
+
+</html>

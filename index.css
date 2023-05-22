@@ -1,0 +1,370 @@
+/* ============================ Hero (Main) Section =================================== */
+.hero_left {
+  width: 50%;
+  padding: 4rem 0rem 4rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.first_word {
+  font-size: 40px;
+}
+.last_word {
+  display: inline-block;
+  color: var(--primary-color);
+}
+
+.hero_right {
+  position: relative;
+  width: 60%;
+  height: 80vh;
+  background-image: url("./images/home_images/hero-image-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 140px;
+  background-position-y: 0px;
+}
+
+/* ======================================= Classes Offered ================================= */
+.classes_offered_container .class_offered {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 350px auto;
+  grid-gap: 10px;
+  justify-content: center;
+  width: 100%;
+}
+.classes_offered_container .class_offered .card {
+  transition: var(--transition);
+}
+.classes_offered_container .class_offered .card.card_1 {
+  background-image: url("./images/home_images/men-judo.jpg");
+}
+.classes_offered_container .class_offered .card.card_2 {
+  background-image: url("./images/home_images/kid-judo.jpg");
+}
+.classes_offered_container .class_offered .card.card_3 {
+  background-image: url("./images/home_images/karate.jpg");
+}
+.classes_offered_container .class_offered .card.card_4 {
+  background-image: url("./images/home_images/jiu-jitsu.jpg");
+}
+.classes_offered_container .class_offered .card.card_5 {
+  background-image: url("./images/home_images/men-gym-weight.jpg");
+}
+
+.classes_offered_container .class_offered .text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: var(--transition);
+  backdrop-filter: blur(3px) brightness(40%);
+}
+.classes_offered_container .class_offered .card:hover .text {
+  height: 40%;
+}
+.classes_offered_container .class_offered .text a {
+  border-bottom: var(--btn-border);
+}
+
+.classes_offered_container .class_offered .text a:hover span {
+  margin-left: 5px;
+}
+
+/* ============================= Gym Facilites ============================ */
+
+.gym_facilites_container {
+  width: 95%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider_container {
+  position: relative;
+  /* display: flex; */
+  width: 100%;
+  height: 600px;
+  /* overflow: hidden; */
+}
+
+.slider_prev_arrow,
+.slider_next_arrow {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  border-radius: 70% 10% 40% 30%/ 20% 40% 70% 80%;
+  user-select: none;
+
+  z-index: 300;
+}
+
+.slider_prev_arrow {
+  left: 0;
+}
+
+.slider_next_arrow {
+  right: 0;
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: translateX(80%) scale(0);
+  transition: var(--transition);
+}
+
+.slider.active {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+
+.slider_img {
+  position: relative;
+}
+
+.slider .slider_img_1 {
+  width: 90%;
+  height: 500px;
+  border: var(--btn-border);
+  /* border-radius: 70% 10% 40% / 20% 40% 70%; */
+  border-radius: var(--btn-border-radius);
+  opacity: 0.8;
+  box-shadow: -4px 4px 4px 1px var(--primary-rgba-color);
+}
+
+.slider .slider_img_2 {
+  position: absolute;
+  right: -10%;
+  bottom: 8%;
+  width: 300px;
+  height: 200px;
+  border-radius: 90% 20% 30%/ 40% 70% 20%;
+  border: var(--btn-border);
+}
+
+.slider .slider_text {
+  padding-left: 2rem;
+}
+
+/* ============================ Convenient Time =========================== */
+
+.con_time {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3rem;
+}
+.con_time > p {
+  text-align: justify;
+}
+
+.con_time .con_time-img {
+  width: 80%;
+  align-self: center;
+  border-radius: 10% 0 10% 0;
+  justify-self: center;
+  box-shadow: 9px -9px 0.4px 4px rgba(0, 122, 204, 0.514);
+}
+
+.img_group_container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 60%;
+  padding: 0rem 2rem;
+  text-align: center;
+}
+
+.img_group_container .img_group img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: var(--btn-border);
+}
+
+.img_group_container .img_group.gp1 {
+  align-self: self-start;
+}
+.img_group_container .img_group.gp1 img {
+  width: 140px;
+  height: 140px;
+}
+
+.img_group_container .img_group.gp2 {
+  align-self: end;
+}
+
+/* ============================ Specialist Offered =========================== */
+.specialist_offered {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  /* padding: 2rem; */
+}
+
+.specialist_offered img {
+  width: 60%;
+  justify-self: center;
+  border-radius: 70% 30% / 30% 40%;
+  box-shadow: 6px 6px 2px var(--secondary-color);
+}
+
+.specialist_offered_gp {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 0rem;
+}
+
+.specialist_offered_gp .description {
+  width: 80%;
+  justify-self: left;
+  /* text-align: center; */
+}
+
+.specialist_offered_gp .description.right {
+  justify-self: right;
+}
+
+.specialist_offered_gp .description h4 {
+  color: var(--secondary-color);
+}
+
+.specialist_offered_gp .description ul {
+  margin: 15px 0px 35px 0px;
+}
+.specialist_offered_gp .description ul li {
+  margin-top: 10px;
+}
+
+.cost_price {
+  padding-top: 10px;
+  border-left: var(--btn-border);
+  padding-left: 10px;
+}
+
+/* ================================ Membership Plans ================================== */
+.membership_container .membership {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 450px;
+  column-gap: 1rem;
+  row-gap: 3rem;
+  padding: 2rem 4rem;
+}
+
+.membership_container .membership .card {
+  /* width: */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: var(--btn-border);
+  text-align: center;
+  box-shadow: 0px 0px 10px 2px rgba(10, 191, 188, 0.675) inset;
+}
+.membership_container .membership .card:nth-child(odd) {
+  border-color: var(--secondary-color);
+}
+.membership_container .membership .card .price {
+  background-color: var(--secondary-color);
+  padding: var(--btn-padding);
+  margin-top: -2.1rem;
+  color: black;
+}
+
+.membership_container .membership .card:nth-child(even) .price {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.membership_container .membership .card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ============================== Instructor ============================== */
+.instructor_container .instructor_text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.instructor_container .instructor_text .ins_text {
+  width: 80%;
+  justify-self: end;
+}
+.instructor_container .instructor_text .ins_text h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.instructor_container .instructor_text .ins_img {
+  justify-self: center;
+  text-align: center;
+}
+.instructor_container .instructor_text img {
+  width: 80%;
+  border-radius: var(--btn-border-radius);
+}
+
+.instructor_container .instructor {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+}
+
+.instructor_container .instructor img {
+  width: 60%;
+  height: 80%;
+  border-radius: var(--btn-border-radius);
+}
+
+/*  ============ Scroll animation show and hide ============== */
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+/* =========== Line Moving Animaiton ====== */
+.hero_container .line {
+  animation: lineAnimation 5s infinite alternate;
+}
+
+@keyframes lineAnimation {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+/* ========================== Responsive  ========================== */
+/** ------ laptop or Tablet Version */
+@media only screen and (max-width: 1200px) {
+}
+
+/** ------ Mobile Version ------ */
+@media only screen and (max-width: 768px) {
+}
+/* border-radius: var(--btn-border-radius); */

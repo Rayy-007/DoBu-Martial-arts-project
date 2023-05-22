@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoBu Martaial Arts</title>
+
+    <link rel="stylesheet" href="../general_styling.css">
+    <link rel="stylesheet" href="../form_styling.css">
+    <link rel="stylesheet" href="../Login/login.css">
+    <script src="../general.js"></script>
+
+
+    <script src="https://kit.fontawesome.com/70e9b6443b.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="line line2 line3"></div>
+    <div class="line line3 line4" ></div>
+      <!-- ------------------------ Navigation Bar ------------------------------------- -->
+    <header class="nav_container"> 
+
+        <a href="../index.html"><img src="../images/home_images/dobu-logo.png" alt=""></a>
+
+        <nav>
+            <ul class="nav_links">
+                <li class="nav_link "><a class="before" href="../index.html">Home</a></li>
+
+                <li class="nav_link drop_down_container">
+                    <a class="before" href="../Programs/programs.html">Programs</a>
+                    <div class="drop_down">
+                        <a class="before" href="../Programs/programs.html#classes_detail">Classe</a>
+                        <a class="before" href="../Programs/programs.html#schedule">Schedule</a>
+                    </div>
+                </li>
+
+                <li class="nav_link "><a class="before" href="../Membership/membership.html">Membership</a></li>
+                <li class="nav_link "><a class="before" href="../Instructor/instructor.html">Instructor</a></li>
+                <li class="nav_link "><a class="before" href="../AboutUs/about_us.html">About Us</a></li>
+            </ul>
+        </nav>
+
+        <nav>
+            <ul class="nav_btn">
+                <li><a href="../JoinNow/join_now.html" class="btn btn_fill join_now before after">Join Now</a></li>
+                <li><a href="../Login/login.html" class="btn btn_outline login_btn ">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <!-- ------------- Login Fomr -------------------- -->
+    <section class="grid_container join_now_container">
+        <div class="form_right">
+            <img src="../images/home_images/karate.jpg" alt="" class="login_form_img form_img">
+        </div>
+
+        <div class="form_left form_container login_form">
+            <h3>Welcome Back To Our DoBu Community! </h3>
+            <h3><span style="color: var(--secondary-color)">Let's do some Martial arts!</span></h3>
+
+            <form action="">
+
+                <input type="email" name="email" id="email" placeholder="Email Address" required>
+                <input type="password" name="password" id="password" placeholder="Enter password" required>
+                
+                <button type="submit" class="btn btn_fill join_now before after login">Login</button>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- ---------------------- Footer ---------------------- -->
+    <footer>
+        <div class="wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <a href="../index.html"><img src="../images/home_images/dobu-logo.png" alt=""></a>
+        <div class="links_container">
+            <h4 >Site Map </h4>
+            <ul class="nav_links">
+                <li class="nav_link "><a class="before" href="../index.html">Home</a></li>
+                <li class="nav_link"><a class="before" href="../Programs/programs.html">Programs</a></li>
+                <li class="nav_link "><a class="before" href="../Membership/membership.html">Membership</a></li>
+            </ul>
+            <ul class="nav_links">
+                <li class="nav_link "><a class="before" href="../Instructor/instructor.html">Instructor</a></li>
+                <li class="nav_link "><a class="before" href="../AboutUs/about_us.html">About Us</a></li>
+            </ul>
+        </div>
+        <div class="social_container">
+            <h4>Find Us On Social Media</h4>
+            <div class="social_icons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+        </div>
+
+        <div class="form_container">
+            <h4>Contact Us</h4>
+            <form >
+                <input id="email" type="email" placeholder="Enter Your Email">
+                <button  class="btn btn_outline login " type="button" >Contact</a>
+            </form>
+        </div>
+
+    </footer>
+    
+</body>
+</html>

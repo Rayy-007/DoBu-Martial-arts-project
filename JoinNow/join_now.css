@@ -1,0 +1,27 @@
+.join_now_form {
+  box-shadow: 0px 0px 10px 8px var(--primary-color) inset;
+  padding: 3rem 0rem 3rem 5rem;
+  transition: var(--transition);
+}
+
+.join_now_form:hover {
+  box-shadow: 0px 0px 8px 2px var(--primary-color) inset;
+}
+
+.fail_container {
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-200%);
+  z-index: 8888;
+  padding: 2rem 3rem;
+  border-radius: var(--btn-border-radius);
+  transition: var(--transition);
+}
+
+.fail_container {
+  background-color: #cc1100;
+}
+.show_fail {
+  transform: translateX(-50%) translateY(0);
+}

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoMu Material Arts</title>
+    <link rel="stylesheet" href="general_styling.css">
+    <link rel="stylesheet" href="form_styling.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../Login/login.css">
+
+    <script src="https://kit.fontawesome.com/70e9b6443b.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="../general.js"></script>
+    <script src="./index.js"></script>
+    <script src="../form_validation.js"></script>
+</head>
+<body>
+
+    <!-- ------------------------ Navigation Bar ------------------------ -->
+    <header class="nav_container"> 
+
+        <a href="index.html"><img src="../images/home_images/dobu-logo.png" alt=""></a>
+
+        <nav>
+            <ul class="nav_links">
+                <li class="nav_link "><a class="before active" href="../index.html">Home</a></li>
+
+                <li class="nav_link drop_down_container">
+                    <a class="before" href="../Programs/programs.html">Programs</a>
+                    <div class="drop_down">
+                        <a class="before" href="../Programs/programs.html#classes_detail">Classe</a>
+                        <a class="before" href="../Programs/programs.html#schedule">Schedule</a>
+                    </div>
+                </li>
+
+                <li class="nav_link "><a class="before" href="../Membership/membership.html">Membership</a></li>
+                <li class="nav_link "><a class="before" href="../Instructor/instructor.html">Instructor</a></li>
+                <li class="nav_link "><a class="before" href="../AboutUs/about_us.html">About Us</a></li>
+            </ul>
+        </nav>
+
+        <nav>
+            <ul class="nav_btn">
+                <li><a href="../JoinNow/join_now.html" class="btn btn_fill join_now before after">Join Now</a></li>
+                <li><a href="../Login/login.html" class="btn btn_outline login_btn ">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+        
+
+    <!-- ------------------------ Hero Section ------------------------ -->
+    <section class="hero_container container">
+        <div class="hero_left">
+           <div class="text">
+            <div class="line line3"></div>
+            <h1 class="first_word">Discover the Power of <h1 class="last_word">Martial Arts With DoBu</h1>  </h1>
+            <p>
+                Welcome to DoBu Martial Arts! Improve your physical and mental well-being with our experienced 
+                instructors and diverse martial arts classes. Join our community today and experience the 
+                benefits of being a part of something great.
+            </p>
+           </div>
+           <a class="btn btn_fill join_now before after " href="../JoinNow/join_now.html">Get Started</a>            
+        </div>
+        <div class="hero_right">
+            <div class="line"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+        </div>
+    </section>
+
+    <!-- ------------------------ Classes Offered Section ------------------------------------- -->
+    <section class="flex_container classes_offered_container hidden">
+        <h2>Classes Offered</h2> 
+        <div class="line line3 line4"></div>
+        <div class="class_offered">
+
+            <div class="card card_1">
+                <div class="text">
+                    <h3>Judo</h3>
+                    <a href="../JoinNow/join_now.html">Join <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                </div>
+            </div>
+            <div class="card card_2">
+                <div class="text">
+                    <h3>Kids Judo</h3>
+                    <a href="../JoinNow/join_now.html">Join <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                </div>
+            </div>
+            <div class="card card_3">
+                <div class="text">
+                    <h3>Karate</h3>
+                    <a href="../JoinNow/join_now.html">Join <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                </div>
+            </div>
+            <div class="card card_4">
+                <div class="text">
+                    <h3>Jiu Jitsu</h3>
+                    <a href="../JoinNow/join_now.html">Join <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                </div>
+            </div>
+            <div class="card card_5">
+                <div class="text">
+                    <h3>Fitness</h3>
+                    <a href="../JoinNow/join_now.html">Join <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
+    <!-- ------------------------ Gym Facilites ------------------------ -->
+    <section class="flex_container gym_facilites_container hidden">
+        <div class="line line3 line4 line5"></div>
+        <h2>Gym Facilites</h2>
+        
+        <div class="btn btn_outline login slider_prev_arrow"> <i class="fa-solid fa-arrow-up fa-rotate-270"></i> </div>
+        <div class="btn btn_outline login slider_next_arrow"> <i class="fa-solid fa-arrow-up fa-rotate-90"></i> </div>
+        
+        <div class="line line3"></div>
+        <div class="slider_container">
+
+                <div class="slider slider_1 grid_container active">
+                    <div class="slider_img">
+                        <img class="slider_img_1" src="./images/home_images/gym-room.jpg" alt="">
+                        <img class="slider_img_2" src="./images/home_images/gym-room-1.jpg" alt="">
+                    </div>
+                    <div class="slider_text">
+                        <h4>Gym Facilites</h4>
+                        <p class="small">
+                            Our fully-equipped gym is designed to cater to all your fitness needs. It houses a wide range of exercise 
+                            equipment, including cardio machines, weightlifting stations, and strength training tools. Whether you're 
+                            looking to build muscle, improve endurance, or enhance your overall fitness level, 
+                            our gym provides a diverse array of options to help you achieve your goals.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slider slider_2 grid_container ">
+                    <div class="slider_img">
+                        <img class="slider_img_1" src="./images/home_images/martial-arts-room.jpg" alt="">
+                        <img class="slider_img_2" src="./images/home_images/martial-arts-room-1.jpg" alt="">
+                    </div>
+                    <div class="slider_text">
+                        <h4>Martial Arts Room</h4>
+                        <p class="small">
+                            The martial arts area at DoBu Martial Arts is a spacious and well-equipped facility 
+                            dedicated to various martial arts disciplines. It features a large matted floor 
+                            that provides a safe and comfortable training space for students. Whether you're 
+                            interested in karate, judo, jiu-jitsu, or other martial arts styles, this area offers 
+                            the perfect environment for learning and practicing.
+                        </p>
+                    </div>
+                </div>
+                <div class="slider slider_2 grid_container ">
+                    <div class="slider_img">
+                        <img class="slider_img_1" src="./images/home_images/sauna-room.jpg" alt="">
+                        <img class="slider_img_2" src="./images/home_images/suana-room-1.jpg" alt="">
+                    </div>
+                    <div class="slider_text">
+                        <h4>Sauna Room</h4>
+                        <p class="small">
+                            Indulge in the rejuvenating benefits of our steam room. The steam-filled enclosure creates a moist and 
+                            relaxing environment that helps open up pores, cleanse the skin, and promote detoxification. Enjoy the
+                             enveloping warmth as the steam works its magic, leaving you feeling refreshed and invigorated.
+                        </p>                    
+                    </div>
+                </div>
+                <div class="slider slider_2 grid_container ">
+                    <div class="slider_img">
+                        <img class="slider_img_1" src="./images/home_images/steam-room.jpg" alt="">
+                        <img class="slider_img_2" src="./images/home_images/steam-room-1.jpeg" alt="">
+                    </div>
+                    <div class="slider_text">
+                        <h4>Steam Room</h4>
+                        <p class="small">
+                            Relax and rejuvenate in our sauna, a haven of warmth and tranquility. 
+                            The sauna offers a dry heat environment that helps soothe muscles, relieve stress, 
+                            and promote overall well-being. Step inside and let the gentle heat envelop you, providing a perfect
+                             way to unwind after a vigorous workout or martial arts session.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slider slider_3 grid_container ">
+                    <div class="slider_img">
+                        <img class="slider_img_1" src="./images/home_images/changing-room.jpg" alt="">
+                        <img class="slider_img_2" src="./images/home_images/changing-room-1.jpg" alt="">
+                    </div>
+                    <div class="slider_text">
+                        <h4>Changing Room</h4>
+                        <p class="small">
+                            At DoBu Martial Arts, we provide dedicated changing facilities to meet your needs. 
+                            Our changing rooms are spacious and well-maintained, offering a private and 
+                            comfortable space for you to prepare for your training session. Equipped with 
+                            lockers, benches, and ample storage, our changing facilities allow you to securely 
+                            store your belongings while you focus on your workout. Whether you're putting on 
+                            your martial arts gear or changing into your workout attire, our changing facilities 
+                            offer convenience and privacy.
+                        </p>
+                    </div>
+                </div>
+                <div class="slider slider_3 grid_container ">
+                    <div class="slider_img">
+                        <img class="slider_img_1" src="./images/home_images/shower-room.jpg" alt="">
+                        <img class="slider_img_2" src="./images/home_images/shower-room-1.jpg" alt="">
+                    </div>
+                    <div class="slider_text">
+                        <h4>Shower Room</h4>
+                        <p class="small">
+                            After an intense training session, our shower facilities are designed to help you 
+                            freshen up and rejuvenate. We understand the importance of hygiene and providing a 
+                            clean environment for our members. Our shower areas feature modern fixtures and 
+                            amenities, ensuring a refreshing experience. Step into our well-maintained shower 
+                            cubicles, let the warm water wash away the sweat and grime, and leave feeling 
+                            invigorated. Our commitment to cleanliness extends to our shower facilities, 
+                            ensuring a pleasant and hygienic experience for all.
+                        </p>
+                    </div>
+                </div>
+
+            
+        </div>
+
+    </section>
+
+    <!-- ------------------------ Convenient Time -------------------------->
+    <section class="flex_container con_time_container hidden">
+        <h2>Convenient Training Times</h2>
+        <div class="line line3"></div>
+
+        <div class="con_time">
+            <p>
+                Experience the ultimate flexibility with our martial arts classes! Our schedules are designed to fit your busy lifestyle, 
+                so you can train whenever it's most convenient for you. Don't let a packed schedule hold you back from achieving your fitness 
+                goals. Join us today and start your journey towards a healthier, happier you.
+            </p>
+
+            <img class="con_time-img" src="./images/home_images/con-time.jpg" alt="" class="con_time_image">
+            
+            <div class="img_group_container">
+                <div class="img_group gp1">
+                    <p class="small">Flexible Time</p>
+                    <img src="./images/home_images/time-clock.jpg" alt="">
+                </div>
+                <div class="img_group gp2">
+                    <img src="./images/home_images/time-workout.jpg" alt="">
+                    <p class="small">Manage Time</p>
+                </div>
+                <div class="img_group g3">
+                    <p class="small">Set time with others</p>
+                    <img src="./images/home_images/girls-martail-arts.jpg" alt="">
+                </div>
+                
+                <div class="line line3 line4 line5"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------ Specialist Offered ------------------------ -->
+    <section class="flex_container specialist_offered_container hidden">
+        <h2>Specialist Offered</h2>
+        <div class="specialist_offered">
+
+            <div class="specialist_offered_gp">
+                <img src="./images/home_images/kid-judo2.jpg" alt="">
+                <div class="description">
+                    <h4>Specialist Courses and Fitness Training</h4>
+                    <p class="small">
+                        Whether you're looking to get in shape, improve your self-defense skills, or just want to 
+                        try something new, our specialist courses and fitness training programs are the perfect solution. 
+                        Our six-week beginners' self-defense course will teach you practical skills and techniques that you 
+                        can use to protect yourself in any situation. And if you're looking to take your fitness to the 
+                        next level, our personal fitness training sessions are the perfect way to get customized workouts 
+                        and expert guidance from our certified trainers.
+                    </p>
+                  
+                    
+                </div>
+            </div>
+
+            <div class="specialist_offered_gp">
+                <div class="description right">
+                    <h4>Use of Fitness Room</h4>
+                    <p class="small">
+                        
+                        Looking for a convenient and affordable way to stay in shape? Our fitness room is open to members and non-members 
+                        alike, and offers everything you need to get a great workout. With state-of-the-art equipment and a friendly, 
+                        welcoming atmosphere, you'll be able to exercise at your own pace and achieve your fitness goals in no time. 
+                        And with our flexible pricing options, you can choose the plan that works best for your schedule and budget.
+                    </p>
+                </div>
+                <img src="./images/home_images/man-gym.jpg" alt="">
+            </div>
+
+            <div class="specialist_offered_gp">
+                <img src="./images/home_images/personal-trainner-1.jpg" alt="">
+                <div class="description ">
+                    <h4>Personal Fitness Training</h4>
+                    <p class="small">
+                        If you're looking for personalized attention and expert guidance in your fitness journey, our personal fitness 
+                        training sessions are the perfect solution. Our certified trainers will work with you one-on-one to create a 
+                        customized workout plan that meets your specific needs and goals. Whether you're looking to build muscle, lose 
+                        weight, or just improve your overall fitness, we'll help you get there with personalized coaching, motivation, 
+                        and support. With our flexible scheduling options and competitive pricing, there's no better way to take your 
+                        fitness to the next level.
+                    </p>
+                </div>
+            </div>
+            <div class="line line3 line5"></div>
+        </div>
+    </section>
+
+    <!-- ------------------------Membership Plans ------------------------ -->
+    <section class="flex_container membership_container hidden">
+
+        <h2>Membership Plans</h2>
+
+        <div class="membership">
+
+            <div class="card">
+                <h4 class="price">£25.00</h4>
+                <ul>
+                    <h4>Basic</h4>
+                    <li>2 sessions per week</li>
+                    <li>Choose 1 martial art from our selection</li>
+                    <li>Suitable for beginners who want to learn and improve their skills</li>
+                </ul>
+                <a class="btn btn_fill join_now before after" href="join_now.html">Join</a>
+            </div>
+
+            <div class="card">
+                <h4 class="price">£35.00</h4>
+                <ul>
+                    <h4>Intermediate Plan</h4>
+                    <li>3 sessions per week</li>
+                    <li>Choose 1 martial art from our selection</li>
+                    <li>Suitable for those who want to take their skills to the next level</li>
+                    <li>Access to advanced training techniques and sparring sessions</li>
+                </ul>
+                <a class="btn btn_fill join_now before after" href="join_now.html">Join</a>
+            </div>
+
+            <div class="card">
+                <h4 class="price">£45.00</h4>
+                <ul>
+                    <h4>Advanced Plan</h4>
+                    <li>5 sessions per week</li>
+                    <li>Choose 2 martial art from our selection</li>
+                    <li>Suitable for experienced martial artists who want to refine their skills</li>
+                    <li>Access to specialized training sessions, including weapon and self-defense training</li>
+                </ul>
+                <a class="btn btn_fill join_now before after" href="join_now.html">Join</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ------------------------ Instructor ------------------------ -->
+    <section class="flex_container instructor_container hidden">
+        <div class="instructor_text">
+            <div class="ins_text">
+                <h2> Instructor of <span>DoBu</span></h2>
+                <p class="small">
+                    Our team of highly qualified and experienced martial arts and fitness instructors are dedicated to 
+                    helping you achieve your fitness goals. With a wealth of knowledge and expertise in various martial arts 
+                    disciplines and fitness training, our team is committed to providing you with the best possible training experience. 
+                    Whether you are a beginner or an experienced athlete, our instructors are here to help you every step of the way. 
+                    So come and join us at DoBu and take your training to the next level.
+                </p>    
+    
+            </div>
+            <div class="ins_img">
+                <img src="./images/instructor-images/instructor-1.webp" alt="">
+                <h4>Mauricio Gomez</h4>
+            </div>
+        </div>
+
+        <div class="instructor">
+            <div>
+                <img src="images/instructor-images/instructor-2.jpg" alt="">
+                <h4>Sarah Nova</h4>
+            </div>
+            <div>
+                <img src="images/instructor-images/instructor-3.jpg" alt="">
+                <h4>Guy Victory</h4>
+            </div>
+            <div>
+                <img src="images/instructor-images/instructor-4.jpg" alt="">
+                <h4>Morris Davis</h4>
+            </div>
+            <div>
+                <img src="images/instructor-images/instructor-5.jpg" alt="">
+                <h4>Harpreet Kaur</h4>
+            </div>
+        </div>
+        <div class="line line4 line3"></div>
+        <div class="line line3"></div>
+    </section>
+    
+
+    <!-- ------------------ Register Form --------------------- -->
+    <section class="grid_container join_now_container hidden">
+        <div class="form_right">
+            <img src="../images/home_images/karate.jpg" alt="" class="login_form_img form_img">
+        </div>
+        <div class="form_left form_container join_now_form">
+            <h3>Welcome To Our DoBu Community! </h3>
+            <h3><span>Are you ready to join?</span></h3>
+            <form id="join_now_form" action="">
+                <input type="text" id="name" name="name" placeholder="Your Name" /> 
+                <input type="email" name="email" id="email" placeholder="Your Email Address" />
+
+                <input type="password" name="password" id="password" placeholder="Enter password" />
+                <i class="fa-sharp fa-regular fa-eye-slash" id="password_toggle"></i>
+
+                <fieldset class="gender_field">
+                    <legend><label for="radio"><h4>Choose Gender</h4></label></legend>
+                    <div class="radio">
+                        <div class="radio_container">
+                            <input type="radio" name="radio" id="radio1" value="male">
+                            <label for="radio1">Male</label>
+                        </div>
+                        <div class="radio_container">
+                            <input type="radio" name="radio" id="radio2" value="female">
+                            <label for="radio2">Female</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="classes_field"> 
+                    <legend><label for="classes"><h4>Choose Interested Classes</h4></label></legend>
+
+                    <select name="classes" id="classes">
+                        <option value="">Select</option>
+                        <option value="judo">Judo</option>
+                        <option value="karate">Karate</option>
+                        <option value="jui-jitsu">Jiu jitsu</option>
+                        <option value="muay-thai">Muay Thai</option>
+                        <option value="fitness">Fitness</option>
+                    </select>
+                    
+                </fieldset>
+                
+
+
+                <div class="checkbox_container">
+                    <input type="checkbox" name="checkbox" id="checkbox"> 
+                    <label for="checkbox">Accept Terms and conditions</label>    
+                </div>
+                
+                <button type="submit" class="btn btn_fill join_now before after">Join Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ------------------------ Footer ------------------------ -->
+    <footer>
+        <div class="wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <a href="index.html"><img src="../images/home_images/dobu-logo.png" alt=""></a>
+        <div class="links_container">
+            <h4 >Site Map </h4>
+            <ul class="nav_links">
+                <li class="nav_link "><a class="before" href="../index.html">Home</a></li>
+                <li class="nav_link"><a class="before" href="../Programs/programs.html">Programs</a></li>
+                <li class="nav_link "><a class="before" href="../Membership/membership.html">Membership</a></li>
+            </ul>
+            <ul class="nav_links">
+                <li class="nav_link "><a class="before" href="../Instructor/instructor.html">Instructor</a></li>
+                <li class="nav_link "><a class="before" href="../AboutUs/about_us.html">About Us</a></li>
+            </ul>
+        </div>
+        <div class="social_container">
+            <h4>Find Us On Social Media</h4>
+            <div class="social_icons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+        </div>
+
+        <div class="form_container">
+            <h4>Contact Us</h4>
+            <form >
+                <input id="email" type="email" placeholder="Enter Your Email">
+                <button  class="btn btn_outline login " type="button" >Contact</a>
+            </form>
+        </div>
+
+    </footer>
+
+</body>
+</html>

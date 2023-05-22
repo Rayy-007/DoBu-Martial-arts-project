@@ -1,0 +1,61 @@
+/* ============================== Programs ================ */
+
+/* ------------- Classes offered------------ */
+.classes_offered_container .flex_container {
+  gap: 3rem;
+  padding: 0rem;
+}
+.class {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: center;
+  border: var(--btn-border);
+  padding: 4rem 2rem;
+  box-shadow: -9px 6px 20px 0px var(--primary-rgba-color);
+}
+
+.class img {
+  width: 90%;
+  height: 350px;
+  justify-self: center;
+  border-radius: 30% 70% / 90% 40%;
+}
+
+.class .description {
+  padding: 0rem 4rem;
+  text-align: center;
+}
+
+.class .description h3 {
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+
+.class .description p {
+  margin: 10px 0 20px 0;
+  text-align: left;
+}
+
+/* =========================== Schedule ====================== */
+table {
+  border-collapse: collapse;
+}
+tr,
+th,
+td {
+  border: var(--btn-border);
+  padding: 1rem;
+}
+
+th {
+  background-color: var(--primary-rgba-color);
+}
+
+td:hover {
+  background-color: var(--secondary-rgba-color);
+}
+
+/* ========== Smooth Scroll ======== */
+.smooth_scrool {
+  transition: all 0.5s ease-in-out;
+}

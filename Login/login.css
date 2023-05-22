@@ -1,0 +1,22 @@
+.login_form {
+  box-shadow: 0px 0px 10px 8px var(--secondary-color) inset;
+  padding: 3rem 0rem 3rem 5rem;
+  transition: var(--transition);
+}
+
+.login_form:hover {
+  box-shadow: 0px 0px 8px 2px var(--secondary-color) inset;
+}
+
+.form_right .form_img {
+  box-shadow: -20px -20px 2px 1px var(--secondary-rgba-color);
+  border-color: var(--secondary-color);
+}
+
+.login {
+  background: linear-gradient(
+    45deg,
+    var(--secondary-color),
+    var(--secondary-rgba-color)
+  );
+}

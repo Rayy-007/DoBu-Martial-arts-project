@@ -1,0 +1,228 @@
+.nav_container {
+  position: relative;
+}
+
+/* ========== Info text ========= */
+.info_container {
+  position: absolute;
+  right: 30px;
+  border-bottom: var(--btn-border);
+  cursor: pointer;
+  z-index: 88;
+}
+
+.show_info {
+  position: relative;
+  background: linear-gradient(-45deg, var(--primary-color), var(--bg-color));
+  padding: 2rem;
+  border-radius: var(--btn-border-radius);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 888;
+  display: none;
+  max-width: 80%;
+}
+
+.show_info ol li {
+  list-style-type: decimal;
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+.close_info {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
+}
+
+.close_info i {
+  font-size: 3rem;
+  transition: var(--transition);
+  text-shadow: 2px 2px 5px var(--bg-color);
+}
+
+.close_info i:hover {
+  color: var(--bg-color);
+}
+
+/* ============= Admin table ================== */
+.dashborad_container {
+  width: 100%;
+}
+
+table i {
+  margin-right: 10px;
+}
+
+table {
+  text-align: center;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  padding: 20px 10px;
+  background: var(--primary-rgba-color);
+}
+td {
+  padding: 20px 10px;
+  border-bottom: var(--btn-border);
+  border-bottom-color: var(--secondary-color);
+}
+
+tbody tr:hover {
+  background-color: var(--secondary-rgba-color);
+}
+
+tr:hover .edit,
+tr:hover .delete {
+  background-color: var(--bg-color);
+}
+
+.delete,
+.edit {
+  cursor: pointer;
+  transition: var(--transition);
+}
+.delete {
+  color: #cc1100;
+  padding: 5px 1rem;
+}
+
+.edit {
+  color: var(--primary-color);
+  padding: 5px 1rem;
+}
+
+.delete:hover,
+.edit:hover {
+  transform: scale(1.1);
+}
+
+/* ============== Edit Form ================== */
+.flex_container {
+  gap: 0;
+}
+
+.edit_form_container,
+.add_form_container {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 888;
+}
+
+form#editForm,
+form#add_user_form {
+  margin: 0 auto;
+  background: linear-gradient(30deg, var(--bg-color), var(--primary-color));
+  padding: 3rem;
+  border-radius: var(--btn-border-radius);
+}
+
+form#editForm input {
+  border-color: transparent;
+  background: transparent;
+}
+
+form#editForm fieldset {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.form_container.edit_form,
+.form_container.form_container#add_user_form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+#cancel {
+  margin-right: 20px;
+}
+
+/* ============= add user ============ */
+
+#addUser {
+  cursor: pointer;
+  background-color: var(--secondary-rgba-color);
+  transition: var(--transition);
+  margin-top: 5px;
+  width: 200px;
+  position: absolute;
+  left: 50%;
+  border-bottom-right-radius: var(--btn-border-radius);
+  border-bottom-left-radius: var(--btn-border-radius);
+  transform: translateX(-50%);
+}
+
+#addUser:hover {
+  background-color: var(--primary-color);
+}
+
+button[type="submit"] {
+  margin: 10px auto;
+  display: block;
+  width: 200px;
+  background: var(--secondary-rgba-color);
+}
+
+form#add_user_form fieldset {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+form #name,
+form #email {
+  width: 46%;
+  margin-right: 20px;
+}
+
+/* ======== Close Form ========= */
+#closeButton,
+#closeButtonEdit {
+  float: right;
+  background: #cc1100;
+  cursor: pointer;
+}
+
+/*  =========== Success Message and Fail Message ====== */
+.success_container,
+.fail_container,
+.delete_container,
+.changed_container {
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-200%);
+  z-index: 8888;
+  padding: 2rem 3rem;
+  border-radius: var(--btn-border-radius);
+  transition: var(--transition);
+}
+.success_container,
+.changed_container {
+  background-color: var(--secondary-color);
+}
+.fail_container {
+  background-color: #cc1100;
+}
+
+.success_container h4,
+.fail_container h4,
+.delete_container h4,
+.changed_container h4 {
+  color: var(--text-color);
+}
+
+.show_success,
+.show_fail,
+.show_delete,
+.show_changed {
+  transform: translateX(-50%) translateY(0);
+}
+
+/*  =========== Delete Message ======== */
+.delete_container {
+  background-color: var(--primary-color);
+}

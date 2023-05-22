@@ -1,0 +1,432 @@
+/* -------- Font Family  Poppins  -------- */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Karla:wght@400;600;800&family=Poppins:wght@400;600;800&display=swap");
+
+/* -------- Font Family  Karla  -------- */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Karla:wght@400;600;800&family=Poppins:wght@400;600;800&display=swap");
+
+/** Variable for css */
+:root {
+  /* Colors */
+  --bg-color: #1a1a1a;
+  --primary-color: #007acc;
+  --secondary-color: #0abfbc;
+  --text-color: #e6e6e6;
+  /* --text-color: #333333; */
+  --primary-rgba-color: rgba(0, 122, 204, 0.514);
+  --secondary-rgba-color: rgba(10, 191, 188, 0.675);
+
+  /* font familay, font size and font adjusting  */
+  --font-family-header: "Karla", sans-serif;
+  --font-family-para: "Poppins", sans-serif;
+
+  --font-size-header: 48px;
+  --font-size-para: 16px;
+  --font-size-general-text: 18px;
+
+  --font-letter-spacing-header: 1.5px;
+  --font-letter-spacing-para: 1.1px;
+
+  /* Button Padding */
+  --btn-padding: 10px 20px;
+  --btn-border-radius: 0.5rem;
+  --btn-border: 3px solid #007acc;
+
+  /* Transition Effect  */
+  --transition: all 0.3s ease-in-out;
+}
+
+/*? ======================== General Styling ======================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
+  color: white;
+  font-family: var(--font-family-header);
+  font-size: var(--font-size-general-text);
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+/** ================== Container styling ===================== */
+.container {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex_container {
+  width: 100%;
+  position: relative;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  padding: 2rem 4rem;
+  gap: 2rem;
+  align-items: center;
+}
+
+/** ============== Font Size and Weight ============== */
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-family-header);
+  font-size: var(--font-size-header);
+  letter-spacing: var(--font-letter-spacing-header);
+  font-weight: 800;
+  word-spacing: 2px;
+}
+
+h2 {
+  font-size: 32px;
+  color: var(--text-color);
+}
+h3 {
+  font-size: 28px;
+  font-weight: 600;
+  /* color: var(--text-color); */
+}
+h4 {
+  font-size: 21px;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+p {
+  font-family: var(--font-family-para);
+  font-size: var(--font-size-para);
+  letter-spacing: var(--font-letter-spacing-para);
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.small {
+  font-size: 14px;
+  margin-top: 10px;
+}
+span {
+  font-size: inherit;
+  color: var(--primary-color);
+}
+
+/* =============================== Button Styling ============================== */
+/* ==================== General Button Styling==================== */
+
+/* All Btn */
+.btn {
+  display: inline-block;
+  padding: var(--btn-padding);
+  border-radius: var(--btn-border-radius);
+  box-shadow: -1px 2px 2px 0px rgba(0, 122, 204, 0.514);
+  z-index: 2;
+  user-select: none;
+}
+.btn:hover {
+  box-shadow: none;
+}
+
+/* -- Outline  Button */
+.btn_outline {
+  border: var(--btn-border);
+  border-color: var(--secondary-color);
+}
+.btn_outline:hover {
+  background: linear-gradient(
+    45deg,
+    var(--secondary-color),
+    var(--primary-rgba-color)
+  );
+  transform: scale(0.98);
+}
+
+/* -- Background Button */
+.btn_fill {
+  background: linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--primary-rgba-color)
+  );
+}
+.btn_fill:hover {
+  background: transparent;
+  transform: scale(1.03);
+}
+
+/* ============ Before and After Animation ======== */
+.before::before,
+.after::after {
+  content: "";
+  position: absolute;
+  transition: var(--transition);
+  z-index: 100;
+}
+
+/* ---------- Nav bar Button Sytling ----------  */
+.join_now {
+  position: relative;
+}
+.join_now.before::before,
+.join_now.after::after {
+  width: 0%;
+  height: 0%;
+}
+
+.join_now.before::before {
+  top: 0;
+  left: 0;
+}
+.join_now.after::after {
+  bottom: 0;
+  right: 0;
+}
+
+.join_now.before:hover::before,
+.join_now.after:hover::after {
+  width: calc(100% - 3px);
+  height: calc(100% - 3px);
+}
+
+.join_now.before:hover::before {
+  border-top: var(--btn-border);
+  border-left: var(--btn-border);
+}
+
+.join_now.after:hover::after {
+  border-bottom: var(--btn-border);
+  border-right: var(--btn-border);
+}
+
+/* ============= Nav Bat Stling  ============= */
+.nav_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 3rem 4rem;
+  position: sticky;
+  top: 0;
+  z-index: 777;
+}
+
+.nav_container img {
+  width: 80%;
+}
+
+.nav_container nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_container nav ul li {
+  display: inline-block;
+  padding: 0.8rem;
+}
+
+.nav_links li a {
+  position: relative;
+}
+
+.nav_links li a.before::before {
+  bottom: -5px;
+  width: 0%;
+  height: 3px;
+  background: var(--primary-color);
+}
+
+.nav_links li a:hover::before {
+  width: 100%;
+}
+
+.nav_links li a.active::before {
+  width: 100%;
+}
+
+.nav_links .drop_down_container {
+  position: relative;
+}
+.nav_links .drop_down {
+  background-color: var(--primary-rgba-color);
+  position: absolute;
+  width: 100%;
+  padding: 1rem 1rem;
+  margin-top: 5px;
+  left: 0;
+  border-bottom-left-radius: var(--btn-border-radius);
+  border-bottom-right-radius: var(--btn-border-radius);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transform: scale(0);
+  transition: var(--transition);
+  z-index: 300;
+}
+
+.nav_links .drop_down_container:hover .drop_down {
+  transform: scale(1);
+}
+
+/* ==================================== Footer Styling =============================== */
+footer {
+  position: relative;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4rem 2rem;
+  text-align: center;
+  height: 400px;
+
+  background-image: linear-gradient(
+    45deg,
+    transparent,
+    var(--primary-color),
+    var(--primary-rgba-color)
+  );
+}
+
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  /* z-index: -2; */
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(161% + 1.3px);
+  height: 181px;
+}
+
+.wave .shape-fill {
+  fill: var(--bg-color);
+}
+
+footer h4 {
+  color: white;
+}
+
+footer ul {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+footer h4 {
+  margin-bottom: 2rem;
+  border-bottom: var(--btn-border);
+  border-color: var(--secondary-color);
+}
+
+footer .social_container .social_icons i {
+  display: inline-block;
+  padding: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.fa.instagram {
+  color: #e6e6fa;
+}
+
+footer .social_container .social_icons i:hover {
+  transform: scale(1.2);
+}
+
+footer .form_container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+/* ==================== Image Styling =========================== */
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ==================== Cards Styling ============================== */
+.card {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: var(--btn-border-radius);
+  position: relative;
+}
+
+/* ================= Line Styling =================== */
+.line {
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    transparent,
+    var(--primary-color)
+  );
+  left: 170px;
+  transform: skewX(-40deg);
+  z-index: -1;
+}
+
+.line2 {
+  height: 100%;
+  left: -80px;
+  top: -145px;
+  background-image: linear-gradient(
+    to top,
+    transparent,
+    var(--secondary-color)
+  );
+}
+
+.line3 {
+  height: 70%;
+  bottom: 0;
+  left: -40px;
+  opacity: 0.4;
+}
+
+.line4 {
+  transform: skewX(50deg);
+  left: 50%;
+  top: -40px;
+  height: 80%;
+}
+
+.line5 {
+  left: 70%;
+  height: 70%;
+  top: 10%;
+  background-image: linear-gradient(
+    to bottom,
+    transparent,
+    var(--secondary-color)
+  );
+}
+
+.fa-arrow-right {
+  margin-right: 10px;
+  color: var(--primary-color);
+}
