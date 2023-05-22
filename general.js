@@ -18,9 +18,8 @@ window.addEventListener("scroll", function () {
 
 $(document).ready(function () {
   // Smooth scrolling for class links
-  $('.nav_link a[href="../Programs/programs.html#classes"]').click(function (
-    event
-  ) {
+  $("#classes_detail").click(function (event) {
+    event.preventDefault();
     $("html, body").animate(
       {
         scrollTop: $("#classes_detail").offset().top,
@@ -30,9 +29,8 @@ $(document).ready(function () {
   });
 
   // Smooth scrolling for schedule links
-  $(".nav_link a[href='../Programs/programs.html#schedule']").click(function (
-    event
-  ) {
+  $("#schedule").click(function (event) {
+    event.preventDefault();
     $("html, body").animate(
       {
         scrollTop: $("#schedule").offset().top,
