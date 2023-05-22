@@ -19,7 +19,7 @@ window.addEventListener("scroll", function () {
 $(document).ready(function () {
   // Smooth scrolling for class links
   $("#classes_detail").click(function (event) {
-    event.preventDefault();
+    // event.preventDefault();
     $("html, body").animate(
       {
         scrollTop: $("#classes_detail").offset().top,
@@ -30,7 +30,7 @@ $(document).ready(function () {
 
   // Smooth scrolling for schedule links
   $("#schedule").click(function (event) {
-    event.preventDefault();
+    // event.preventDefault();
     $("html, body").animate(
       {
         scrollTop: $("#schedule").offset().top,
